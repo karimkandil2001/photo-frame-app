@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    transition: background-color 0.3s ease; /* تأثير تغير اللون */
+    transition: background-color 0.3s ease;
 }
 
 /* تحسين العنوان */
@@ -31,6 +31,7 @@ h1:hover {
 .image-container {
     margin-top: 30px;
     text-align: center;
+    width: 100%;
 }
 
 img {
@@ -117,3 +118,16 @@ input[type="file"]:hover {
 body {
     animation: fadeIn 1s ease-in-out; /* تأثير الفيدين عند تحميل الصفحة */
 }
+
+/* تصميم متجاوب للموبايل: */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* تقليص حجم العنوان */
+    }
+
+    .image-container {
+        width: 90%; /* تقليص العرض ليكون مناسبًا للموبايل */
+    }
+
+    button {
+        padding: 10px 20px; /* تق*
