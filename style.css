@@ -1,8 +1,18 @@
+/* تنسيق العنوان */
+.frame-title {
+    font-size: 2.5rem;         /* حجم الخط */
+    text-align: center;        /* محاذاة النص في المنتصف */
+    color: #f5b041;            /* اللون الذهبي الفاتح */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* تأثير الظل */
+    margin-top: 20px;          /* المسافة العلوية */
+    margin-bottom: 30px;       /* المسافة السفلية */
+}
+
 /* إعدادات عامة للصفحة */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1a2b3c; /* اللون الكحلي */
-    color: #fff;  /* النصوص باللون الأبيض */
+    color: #fff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -130,4 +140,27 @@ body {
     }
 
     button {
-        padding: 10px 20px; /* تق*
+        padding: 10px 20px; /* تقليص حجم الزر للموبايل */
+        font-size: 1rem;
+    }
+
+    input[type="file"] {
+        padding: 10px 20px; /* تقليص حجم زر رفع الملف */
+        font-size: 1rem;
+    }
+
+    img {
+        max-height: 300px; /* تقليص ارتفاع الصورة قليلاً على الموبايل */
+    }
+}
+
+/* تصميم متجاوب أكثر للموبايلات الصغيرة */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* تقليص الحجم أكثر للموبايل الصغير */
+    }
+
+    button, input[type="file"] {
+        width: 100%; /* جعل الأزرار والإدخالات تأخذ كامل العرض */
+    }
+}
